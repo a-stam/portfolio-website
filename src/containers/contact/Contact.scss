@@ -2,6 +2,7 @@
 
 .contact-div-main {
   display: flex;
+  width: 100%;
 }
 
 .dark-mode a {
@@ -31,6 +32,7 @@
   color: $textColor;
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .contact-subtitle {

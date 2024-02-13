@@ -12,6 +12,12 @@
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Rogan";
+  src: local("Rogan"),
+    url("./assets/fonts/Rogan-Regular.ttf") format("ttf");
+  font-display: swap;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

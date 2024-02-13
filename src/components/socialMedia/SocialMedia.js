@@ -1,11 +1,12 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import {contactInfo, socialMediaLinks} from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
     return null;
   }
+  
   return (
     <div className="social-media-div">
       {socialMediaLinks.github ? (
@@ -40,6 +41,18 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fas fa-envelope"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {contactInfo.resume ? (
+        <a
+          href={contactInfo.resume}
+          className="icon-button resume"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-file-alt"></i>
           <span></span>
         </a>
       ) : null}

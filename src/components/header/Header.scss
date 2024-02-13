@@ -9,7 +9,7 @@
 
 .dark-menu {
   background-color: $darkBackground !important;
-  color: $textColorDark;
+  color: $textColorDark !important;
 }
 
 .dark-menu li a {
@@ -47,7 +47,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: $buttonColor;
 }
 
 .header .logo {
@@ -61,8 +61,9 @@
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Rogan";
   font-weight: bold;
+  color: black;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
@@ -159,7 +160,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .header li {
     float: left;
   }
@@ -175,8 +176,8 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
-  }
+@media (max-width: 46em) {
+  // .header {
+  //   font-size: 12px;
+  // }
 }

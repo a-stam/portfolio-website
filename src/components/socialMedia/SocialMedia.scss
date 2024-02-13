@@ -2,6 +2,15 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  z-index: 98;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon-button {
@@ -48,6 +57,10 @@
   background-color: $google;
 }
 
+.resume i {
+  background-color: $resume;
+}
+
 .twitter i {
   background-color: $twitter;
 }
@@ -78,7 +91,8 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
-.medium i:hover {
+.medium i:hover,
+.resume i:hover {
   background-color: $textColor;
 }
 

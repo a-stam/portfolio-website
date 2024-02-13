@@ -4,7 +4,6 @@
   position: relative;
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
   border: 1px solid $lightBorder1;
 }
 
@@ -12,12 +11,16 @@
   position: relative;
   background-color: $darkBackground;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
   border: 1px solid $lightBorder1;
 }
 
 .experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: 0 4px 8px $lightBoxShadowDark;
+}
+
+.experience-card-dark:hover {
+  box-shadow: 0 4px 8px $darkBoxShadow;
+  transition: all  .1s ease-in-out;
 }
 
 .experience-banner {
@@ -25,7 +28,6 @@
   background-repeat: no-repeat;
   background-size: 150%;
   background: $experienceCardBannerLG;
-  border-radius: 10px 10px 0px 0px;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -o-filter: blur(0px);
@@ -79,7 +81,7 @@
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
   left: 0;
   right: 0;
   top: 7rem;
@@ -88,7 +90,8 @@
   width: 8rem;
   height: 8rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  border-radius: 20%;
+  background-color: white;
 }
 
 .experience-text-role {

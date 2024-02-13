@@ -2,12 +2,25 @@
 
 .skills-main-div {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   overflow: hidden;
 }
 
-.skills-text-div {
-  margin-left: 50px;
+
+// .skills-text-div {
+  // margin-left: 50px;
+// }
+
+.skills-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-icon:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  // make sure cursor is regular
+  cursor: default;
 }
 
 .skills-main-div > * {
@@ -46,10 +59,10 @@
   .skills-main-div {
     flex-direction: column;
   }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
+  // .skills-text-div {
+  //   margin-left: 0px;
+  //   margin: 20px;
+  // }
   .skills-text {
     font-size: 16px;
   }
