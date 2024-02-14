@@ -28,6 +28,7 @@ export default function Greeting() {
             {greeting.title}{" "}
           </h1>
           {greeting.subTitle.map((subTitle) => (<p
+              key={subTitle}
               className={
                 isDark
                   ? "dark-mode greeting-text-p"
