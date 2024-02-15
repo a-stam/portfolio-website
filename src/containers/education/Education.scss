@@ -6,14 +6,12 @@
 .education-section {
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .education-section > * {
   flex: 1;
-  margin-bottom: 30px;
 }
 
 .education-card-container {

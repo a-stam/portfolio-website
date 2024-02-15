@@ -14,7 +14,7 @@ export default function Footer() {
         </p> */}
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           portfolio by {" "}
-          <a href="https://github.com/a-stam">
+          <a href="https://github.com/a-stam" target="_blank" rel="noopener noreferrer">
             a-stam
           </a>
         </p>

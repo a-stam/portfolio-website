@@ -9,7 +9,7 @@ import SocialMedia from "../components/socialMedia/SocialMedia";
 // import StartupProject from "./StartupProjects/StartupProject";
 // import Achievement from "./achievement/Achievement";
 // import Blogs from "./blogs/Blogs";
-// import Footer from "../components/footer/Footer";
+import Footer from "../components/footer/Footer";
 // import Talks from "./talks/Talks";
 // import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
@@ -68,7 +68,7 @@ const Main = () => {
               {/* <Podcast /> */}
               <Profile />
             </div>
-            {/* <Footer /> */}
+            <Footer />
             <ScrollToTopButton />
           </div>
         )}
