@@ -5,7 +5,6 @@ import Skills from "./skills/Skills";
 // import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 // import Projects from "./projects/Projects";
-import SocialMedia from "../components/socialMedia/SocialMedia";
 // import StartupProject from "./StartupProjects/StartupProject";
 // import Achievement from "./achievement/Achievement";
 // import Blogs from "./blogs/Blogs";
@@ -51,7 +50,6 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <div id="main-container">
-            <SocialMedia />
             <Header />
             <div id="inner-main-container">
               <Greeting />

@@ -1,10 +1,50 @@
 @import "../../_globalColor";
 
+.experience-project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.experience-project-container-odd {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.experience-project-container > * {
+  flex: 1;
+}
+
+.experience-project-container-odd > * {
+  flex: 1;
+}
+
+.experience-project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.experience-project-heading {
+  font-weight: 800;
+  color: $textColor;
+  width: 100%;
+  text-align: center;
+}
+
 .experience-card {
   position: relative;
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border: 1px solid $lightBorder1;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 .experience-card-dark {
@@ -12,6 +52,8 @@
   background-color: $darkBackground;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border: 1px solid $lightBorder1;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 .experience-card:hover {
@@ -39,7 +81,7 @@
   justify-content: center;
 }
 
-.experience-blurred_div {
+.experience-blurred-div {
   position: absolute;
   background: $experienceCardBlurredDivLG;
   -webkit-filter: blur(5px);
@@ -124,6 +166,15 @@
   margin-top: 2rem;
 }
 
+.img-scale-down {
+  /* Uses either 'none' or 'contain' to produce the smallest image size */
+  object-fit: contain;
+}
+
+li.subTitle {
+  margin: 1rem 0;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {
@@ -141,6 +192,12 @@
     width: 6.5rem;
     height: 6.5rem;
   }
+  .experience-project-container {
+    flex-direction: column;
+  }
+  .experience-project-container-odd {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -155,5 +212,8 @@
   }
   .experience-text-desc {
     font-size: 16px;
+  }
+  .experience-roundedimg {
+    display: relative;
   }
 }

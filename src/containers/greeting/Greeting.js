@@ -6,6 +6,7 @@ import "./Greeting.scss";
 // import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 // import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 import {
   // illustration, 
@@ -37,17 +38,17 @@ export default function Greeting() {
             >
               {subTitle}
           </p>))}
-          {/* <SocialMedia /> */}
-          {/* <div className="button-greeting-div"> */}
-            <Button className="button-greeting" text="Contact me" href="#contact" />
-            {/* {greeting.resumeLink && (
-              <Button
-                className="button-greeting"
-                text="See my resume"
-                newTab={true}
-                href={greeting.resumeLink}
-              />
-            )} */}
+          <SocialMedia />
+          <Button className="button-greeting" text="Contact me" href="#contact" />
+          
+          {/* {greeting.resumeLink && (
+            <Button
+              className="button-greeting"
+              text="See my resume"
+              newTab={true}
+              href={greeting.resumeLink}
+            />
+          )} */}
           {/* </div> */}
         </div>
       </div>

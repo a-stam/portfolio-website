@@ -232,13 +232,36 @@ const workExperiences = {
       companylogo: require("./assets/images/makeithappenLogo.png"),
       date: "Mar 2022 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Automated internal processes improving Writer Guild of America East's (WGAE) workflow efficiency by 50%",
-        "Designed and developed a React-based web app for Innova",
-        "Enhanced and maintained PostgreSQL databases for Node.js based WGAE’s enterprise app",
-        "Implemented RESTful APIs in Express.js",
-        "Responsible for Sprint planning, backlog grooming, and release management",
-        "Mentored two interns and helped them develop components running within a complex system"
+      projects: [
+        {
+          header: "Innova Drilling and Intervention",
+          descBullets: [
+            "Designed and developed a React-based web compontnets for Innova's data management system",
+            "Built 2D and 3D Chart.js visualizations to display real-time drilling data",
+            "Integrated with AWS OCR and S3 to automate document processing",
+            "Collaborated with Innova's team to ensure the product meets their needs and requirements",
+          ],
+          photos: [
+            require("./assets/images/innova_images/innova1.png"),
+            require("./assets/images/innova_images/innova2.png"),
+            require("./assets/images/innova_images/innova3.png"),
+            require("./assets/images/innova_images/innova4.png"),
+            require("./assets/images/innova_images/innova5.png"),
+          ]
+        },
+        {
+          header: "Writers Guild of America East (WGAE)",
+          descBullets: [
+            "Automated internal processes improving WGAE's workflow efficiency by 50%",
+            "Enhanced and maintained PostgreSQL databases for Node.js enterprise app",
+            "Implemented RESTful APIs in Express.js",
+            "Responsible for Sprint planning, backlog grooming, and release management",
+          ],
+          photos: [
+            require("./assets/images/wgae_images/wgae1.png"),
+            require("./assets/images/wgae_images/wgae2.png"),
+          ]
+        }
       ]
     },
     {
@@ -247,11 +270,15 @@ const workExperiences = {
       companylogo: require("./assets/images/yonderDeepLogo.png"),
       date: "Jan 2022 – Jun 2023",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      descBullets: [
-        "Developed Python-based software for a fully Autonomous Underwater Vehicle (AUV) for oceanographic research",
-        "Led a team of five engineers to redesign and implement AUV’s Control System UI in Tkinter",
-        "Implemented a Python based multithreaded radio communication system between AUV and its base station",
-        "Diagnosed motion sensing issues, debugged code, and improved accuracy of AUV’s Control System",
+      projects: [
+        {
+          descBullets: [
+            "Developed Python-based software for a fully Autonomous Underwater Vehicle (AUV) for oceanographic research",
+            "Led a team of five engineers to redesign and implement AUV’s Control System UI in Tkinter",
+            "Implemented a Python based multithreaded radio communication system between AUV and its base station",
+            "Diagnosed motion sensing issues, debugged code, and improved accuracy of AUV’s Control System",
+          ]
+        }
       ]
     },
     {
@@ -260,10 +287,15 @@ const workExperiences = {
       companylogo: require("./assets/images/sagaLogo.png"),
       date: "Jun 2021 – Aug 2021",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      descBullets: [
-        "Worked in a team of five interns to develop a Java Spring-based backend for Selecta CRM app",
-        "Used Hibernate to map an object-oriented domain model to a MySQL database",
-        "Optimized database queries, improving response time by up to 2x",
+      projects: [
+        {
+          descBullets: [
+            "Developed a React-based web application to display real-time data from Saga’s IoT devices",
+            "Designed and implemented a PostgreSQL database for Saga’s IoT devices",
+            "Integrated with AWS S3 and Lambda to automate data processing",
+            "Collaborated with Saga’s team to ensure the product meets their needs and requirements",
+          ]
+        }
       ]
     }
   ]
